@@ -1,0 +1,1 @@
+time="2021-06-06T14:18:29+08:00" level=info Agent=PostmanRuntime/7.28.0 DataSize=106 HostName=LAPTOP-9LR2DVBA Ip="::1" Method=POST Path=/api/v1/job/add SpendTime="7 ms" status=200

@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package pb;
+
+option go_package ="/";
+
+message Captcha{
+    string vid = 1;
+    string b64 = 2;
+    //error err = 3;
+}
+
+message CheckCap{
+    string vid = 4;
+    string val = 5;
+    //error err = 6;
+}
+
+message CheckCapRe{
+    bool result = 7;
+}
+
+//添加rpc服务
+service captcha{
+    rpc getCaptcha (Captcha) returns (Captcha);
+    rpc checkCaptcha (CheckCap) returns (CheckCapRe);
+}
